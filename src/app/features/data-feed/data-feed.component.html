@@ -1,0 +1,45 @@
+<div class="heading my-5 px-2">
+    <h2 class="text-center mb-3">Market Data</h2>
+    <div class="d-flex justify-content-end px-5">
+        <a routerOutlet="" class="btn btn-primary">Try Demo</a>
+    </div>
+</div>
+
+@if (data && isArray(data)) {
+    <div class="px-2">
+        <div class="item my-3 mb-4">
+            <div class="coin-rank">Rank</div>
+            <div class="icon">
+                
+            </div>
+            <div class="coin-name">Coin</div>
+            <div class="coin-price">Price</div>
+            <div class="price-changes">
+                <div class="change1h text-white">Change 1h</div>
+                <div class="change1d text-white">Change 24h</div>
+                <div class="change1w text-white">Change 7d</div>
+            </div>
+        </div>
+        @for (item of data; track item) {
+            <div class="item my-3">
+                <div class="coin-rank">{{item.rank}}</div>
+                <div class="icon">
+                    <img src="{{item.icon}}" alt="">
+                </div>
+                <div class="coin-name">{{item.name}} <span class="coin-ticker">{{item.symbol}}</span></div>
+                <div class="coin-price">{{item.price}}</div>
+                <div class="price-changes">
+                    <div class="change1h" [ngClass]="item.priceChange1h >= 0 ? 'text-success': 'text-danger'">{{item.priceChange1h}}%</div>
+                    <div class="change1d" [ngClass]="item.priceChange1d >= 0 ? 'text-success': 'text-danger'">{{item.priceChange1d}}%</div>
+                    <div class="change1w" [ngClass]="item.priceChange1w >= 0 ? 'text-success': 'text-danger'">{{item.priceChange1w}}%</div>
+                </div>
+            </div>
+        }
+    </div>
+    
+}
+@else {
+    <div class="loading-cover">
+        <span>loading...</span>
+    </div>
+}

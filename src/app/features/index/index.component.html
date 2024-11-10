@@ -1,0 +1,145 @@
+ <!-- Page content start -->
+ <div class="page-content page-content-home">
+    <section class="section hero-home hero">
+        <div class="hero-home__bg"></div>
+        <div class="container">
+            <div class="hero-inner">
+                <h1 class="hero__title text-center  animate__fadeInUp text-secondary" style="line-height: 50px;">
+                    Bridging, at lightspeed. <i class="icon icomoon-zap text-secondary"></i><br>
+                    On-and-Off the blockchain.
+                </h1>
+                <div
+                    class="hero__actions hstack justify-content-between  animate__fadeInUp animate__delay-400ms">
+                    <div class="hero__buttons button-group">
+                        <a href="" class="btn btn-primary me-3">Oracle</a>
+                        <a href="" class="btn btn-primary-outline">Integrate</a>
+                    </div>
+                    <div class="hero__text text-center w-100">
+                        Bringing off chain capability to the internet computer.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section home-testimonials">
+        <div class="container">
+            <h2 class="text-center section-title text-secondary  animate__fadeInUp">
+                Services
+            </h2>
+            <div class="row gx-5 mb-4 px-2">
+                <div class="testimonial card  animate__fadeInUp my-4">
+                    <div class="card-header hstack">
+                        <h2 class="section-title text-center text-secondary ">Crypto Data Feeds</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            August Data Feeds provide data that is aggregated from many data sources
+                            by a decentralized set of independent node operators. The Decentralized Data
+                            Model which is not fully implemented is modeled after chainlink.
+                        </p>
+                        <p>
+                            However, there are some exceptions where data for a feed can come only from a 
+                            single data source or where data values are calculated. In such a situation, August
+                            Oracle distributes the provision of this data to different nodes and coordinates their
+                            coperation.
+                        </p>
+                        <p>
+                            Go to
+                            <a routerLink="/data-feeds" routerLinkActive="router-link-active"  >Data Feed</a> fo find out more on how to integrate the service.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial card  animate__fadeInUp my-4">
+                    <div class="card-header hstack">
+                        <h2 class="section-title text-center text-secondary ">SMTP</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Due to the limitations of consensus driven open blockchains, salient services
+                            like SMTP have remained a challenge to support.
+                        </p>
+                        <p>But to enable full blown web applications to be run onchain on the Internet Computer,
+                            it is necessary to provision a means for services like SMTP to equip canisters with
+                            the ability to send emails to their users.
+                        </p>
+                        <p>
+                            Go to
+                            <a routerLink="/smtp" >SMTP Page</a> to integrate our SMTP service and start sending emails from
+                            your canisters.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <div class="testimonial card  animate__fadeInUp my-4">
+                    <div class="card-header hstack">
+                        <h2 class="section-title text-center text-secondary ">
+                            Canister Snapshots
+                        </h2>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Coordinated replication of data is what gives blockchains the power to host
+                            applications in a fully decentralized way and it didn't come without its troubles.
+                        </p>
+                        <p>
+                            Snapshots brings the power of tradition backups to canisters. while taking an application might
+                            seem anti decentralization, some applications might need the ability to keep snapshots of their
+                            canisters making rollbacks and analytics possible and easy.
+                        </p>
+                        <p>
+                            Go to
+                            <a routerLink="/snapshots" >Snapshots</a> for more info on this service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section home-analytics">
+        <div class="container">
+            <div class="sankey-wrap">
+                <h2 class="section-title text-center text-secondary ">
+                    Real-time flows
+                </h2>
+                <div class="sankey-graph">
+                    <div class="sankey-graph__title sankey-graph__title_from">From</div>
+                    <div class="sankey-graph__from js-sankey-filter-list" id="js-sankey-from">
+                        <div class="hr"></div>
+                        <button class="reset-button sankey-all js-sankey-all">
+                            <span class="off">Oracle</span>
+                        </button>
+                    </div>
+                    <div class="sankey-graph__graph">
+                        <div class="canvas-wrap">
+                            <canvas id="js-sankey"></canvas>
+                        </div>
+                    </div>
+                    <div class="sankey-graph__title sankey-graph__title_to">To</div>
+                    <div class="sankey-graph__to js-sankey-filter-list" id="js-sankey-to">
+                        <div class="hr"></div>
+                        <button class="reset-button sankey-all js-sankey-all">
+                            <span class="off">Internet Computer</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="call-to-action">
+        <div class="container text-center">
+            <h2 class="text-secondary">Ready to take your canister to the next level</h2>
+            <a href="/develop" class="btn btn-primary btn-width-xl">Integrate</a>
+            <div class="call-to-action__bg">
+                <img src="images/circle-1-sm.svg" alt="" width="282" height="282">
+                <img src="images/circle-1-md.svg" alt="" width="360" height="360">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page content end -->

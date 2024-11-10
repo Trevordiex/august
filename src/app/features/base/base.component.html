@@ -1,0 +1,103 @@
+<div class="page-wrap">
+    <!-- Header start -->
+    <header class="page-header" id="js-header">
+        <div class="container">
+            <div class="page-header__row d-flex justify-content-between">
+                <div>
+                    <h5 class="app-name">August</h5>
+                    <div class="app-name-desc">Internet Computer Oracle</div>
+                </div>
+
+                <div class="page-header__right hstack">
+                    <a class="page-header__launch btn btn-primary-outline">
+                        Oracle
+                    </a>
+                    <div class="header-burger click-action icomoon-menu js-toggle-mob-menu"></div>
+                </div>
+
+                <nav class="d-none d-md-inline-block">
+                    <ul class="header-navigation">
+                        <li class="header-navigation-item">
+                            <a class="header-navigation-link" routerLink="/data-feeds">
+                                Data Feeds
+                            </a>
+                        </li>
+                        <li class="header-navigation-item">
+                            <a routerLink="/smtp" class="header-navigation-link">
+                                SMTP
+                            </a>
+                        </li>
+                        <li class="header-navigation-item">
+                            <a class="header-navigation-link" routerLink="/snapshots">
+                                <i class="icon icomoon-deExplorer-icon me-1 text-primary">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                    <span class="path3"></span>
+                                </i>
+                                Snapshots
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </nav>
+                <a class="header-navigation-wrap__launch btn btn-primary">
+                    Oracle
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+
+
+    <router-outlet></router-outlet>
+
+   
+
+    <!-- Footer start -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="page-footer-inner">
+                <div class="page-footer-row">
+                    <div class="page-footer-col">
+                        <div class="page-footer-col-title text-secondary">Applications</div>
+                        <ul class="page-footer-nav">
+                            <li><a routerLink="/smtp">SMTP</a></li>
+                            <li><a routerLink="/data-feeds">Data Feeds</a></li>
+                            <li><a routerLink="/snapshots">Snapshots</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="page-footer-col">
+                        <div class="page-footer-col-title text-secondary">Developers</div>
+                        <ul class="page-footer-nav">
+                            <li><a href="">Documentation</a></li>
+                            <li><a href="/develop">Developer Info</a></li>
+                            <li><a href="">Talk to an expert</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="page-footer-col">
+                        <div class="page-footer-col-title text-secondary">Contact</div>
+                        <ul class="page-footer-nav">
+                            <li><a>General Inquiries</a></li>
+                            <li><a>Press</a>
+                            </li>
+                            <li><a >Discord</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="line-separator"></div>
+                
+                <div class="d-flex justify-content-center">
+                    &copy;August 2024
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+</div>
