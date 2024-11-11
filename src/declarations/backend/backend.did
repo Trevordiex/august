@@ -22,6 +22,6 @@ type CanisterHttpResponsePayload =
  };
 service : {
   get: (text) -> (text) query;
-  test: (text) -> (text) query;
+  getAccount: () -> (principal) query;
   transform: (TransformArgs) -> (CanisterHttpResponsePayload) query;
 }

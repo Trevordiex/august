@@ -1,0 +1,7 @@
+Frontend canister via browser
+    frontend: https://loeci-2qaaa-aaaaj-azv5q-cai.icp0.io/
+  Backend canister via Candid interface:
+    backend: https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=ljfe4-xiaaa-aaaaj-azv5a-cai
+
+
+https://loeci-2qaaa-aaaaj-azv5q-cai.icp0.io/

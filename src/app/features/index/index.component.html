@@ -5,14 +5,14 @@
         <div class="container">
             <div class="hero-inner">
                 <h1 class="hero__title text-center  animate__fadeInUp text-secondary" style="line-height: 50px;">
-                    Bridging, at lightspeed. <i class="icon icomoon-zap text-secondary"></i><br>
-                    On-and-Off the blockchain.
+                    <p>Bridging, at lightspeed.  <i class="icon icomoon-zap text-secondary"></i></p>
+                    <p class="mt-2">On-and-Off the blockchain.</p>
                 </h1>
                 <div
                     class="hero__actions hstack justify-content-between  animate__fadeInUp animate__delay-400ms">
                     <div class="hero__buttons button-group">
-                        <a href="" class="btn btn-primary me-3">Oracle</a>
-                        <a href="" class="btn btn-primary-outline">Integrate</a>
+                        <a [routerLink]="['/data-feeds']" routerLinkActive="router-link-active"  class="btn btn-primary me-3">Oracle</a>
+                        <a routerLink="/demo/data-feeds" class="btn btn-primary-outline">Integrate</a>
                     </div>
                     <div class="hero__text text-center w-100">
                         Bringing off chain capability to the internet computer.

@@ -24,7 +24,10 @@ export const routes: Routes = [
                 loadComponent: () => import('./features/demo/demo.component'),
                 canMatch: [],
                 children: [
-                    {}
+                    {path: '', redirectTo: '/demo/data-feeds', pathMatch: 'full'},
+                    {path: 'data-feeds', loadComponent: () => import('./features/demo/data-feeds/data-feeds-demo.component')},
+                    {path: 'smtp', loadComponent: () => import('./features/demo/smtp/smtp-demo.component')},
+                    {path: 'snapshots', loadComponent: () => import('./features/demo/snapshots/snapshots-demo.component')}
                 ]
             }
         ]

@@ -1,0 +1,11 @@
+.link {
+    border: 1px solid rgb(207, 145, 73);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.link .link-active {
+    color: rgb(214, 42, 42);
+}

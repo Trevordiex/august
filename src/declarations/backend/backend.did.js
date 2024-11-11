@@ -16,7 +16,7 @@ export const idlFactory = ({ IDL }) => {
   });
   return IDL.Service({
     'get' : IDL.Func([IDL.Text], [IDL.Text], ['query']),
-    'test' : IDL.Func([IDL.Text], [IDL.Text], ['query']),
+    'getAccount' : IDL.Func([], [IDL.Principal], ['query']),
     'transform' : IDL.Func(
         [TransformArgs],
         [CanisterHttpResponsePayload],

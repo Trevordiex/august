@@ -19,7 +19,7 @@ export interface TransformArgs {
 }
 export interface _SERVICE {
   'get' : ActorMethod<[string], string>,
-  'test' : ActorMethod<[string], string>,
+  'getAccount' : ActorMethod<[], Principal>,
   'transform' : ActorMethod<[TransformArgs], CanisterHttpResponsePayload>,
 }
 export declare const idlFactory: IDL.InterfaceFactory;

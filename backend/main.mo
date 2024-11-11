@@ -4,6 +4,7 @@ import Text "mo:base/Text";
 import Nat64 "mo:base/Nat64";
 import Time "mo:base/Time";
 import Array "mo:base/Array";
+import Principal "mo:base/Principal";
 
 
 //import the custom types you have in Types.mo
@@ -23,8 +24,8 @@ actor {
   private var currencies_data = DataFeed.DataFeed("currencies");
 
 
-  public query func test(input: Text): async Text {
-    input;
+  public query({caller}) func getAccount(): async Principal {
+    return caller
   };
 
 

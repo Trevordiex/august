@@ -3,10 +3,11 @@ import { IcService } from '../../ic.service';
 import { AuthService } from '../../services/auth.service';
 import { from } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
     standalone: true,
-    imports: [CommonModule],
+    imports: [CommonModule, RouterModule],
     selector: 'data-feed',
     templateUrl: 'data-feed.component.html',
     styleUrl: 'data-feed.component.css'
@@ -16,8 +17,6 @@ export default class DataComponent implements OnInit {
     private icService = inject(IcService);
     private authService = inject(AuthService);
 
-    title = 'Internet Computer - Angular dApp template';
-    ic_response:string = '';
     actor = this.icService.createActor({});
     data: any[] = [];
 

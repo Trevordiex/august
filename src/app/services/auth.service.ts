@@ -3,7 +3,6 @@ import { IIService } from "../ic.service";
 import { Actor } from "@dfinity/agent";
 import { environment } from "../../environments/environment";
 import { AuthClient } from "@dfinity/auth-client";
-import { BehaviorSubject } from "rxjs";
 
 
 
@@ -12,7 +11,6 @@ export class AuthService {
     private readonly CANISTER_ID_BACKEND = environment.INTERNET_IDENTITY_CANISTER_ID;
     private readonly DFX_NETWORK = environment.DFX_NETWORK;
     
-    private isAuthenticated = new BehaviorSubject(false);
     private iiService = inject(IIService);
 
     actor$$: Promise<Actor>;
@@ -44,5 +42,6 @@ export class AuthService {
             });
           });
     }
+
 
 }

@@ -6,6 +6,6 @@ import { AuthService } from "../services/auth.service";
 //     private authService = inject(AuthService);
   
 //     canMatch(route: Route, segments: UrlSegment[]): MaybeAsync<GuardResult> {
-        
+//         this.authService.actor$$.
 //     }
-//   }
+// }

@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
     standalone: true,
-    imports: [RouterOutlet],
+    imports: [RouterModule],
     selector: 'demo',
-    template: `<router-outlet></router-outlet>`
+    templateUrl: 'demo.component.html',
+    styleUrl: 'demo.component.css'
 })
 
 export default class DemoComponent implements OnInit {

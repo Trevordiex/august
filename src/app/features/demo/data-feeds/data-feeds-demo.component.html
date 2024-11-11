@@ -1,0 +1,39 @@
+<div class="jumbotron text-center p-5 rounded my-5">
+    Demo - Data Feeds
+</div>
+
+<form [formGroup]="form" (submit)="fetch()">
+    <div class="form-group">
+        <label for="">Canister</label>
+        <input type="text" class="form-control" formControlName="canister" readonly>
+    </div>
+    <div class="form-group">
+        <label for="">Endpoint</label>
+        <select formControlName="endpoint" class="text-white form-control">
+            <option value="coins" selected="true">Coins</option>
+            <option value="markets">Markets</option>
+            <option value="fiats">Fiats</option>
+            <option value="currencies">Currencies</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="">Argument</label>
+        <input type="text" value="None" class="form-control" formControlName="argument" readonly>
+    </div>
+
+    <div class="mt-5 mb-5 d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary px-5" [disabled]="disabled || form.invalid">GET</button>
+    </div>
+</form>
+
+@if (data) {
+    <h5 class="mx-3">Response:</h5>
+    <div class="px-md-5 px-3 py-3 my-4 mx-2 mx-md-5 border rounded">
+        {{data | json}}
+    </div>
+}
+@else {
+    <div class="loading-cover">
+        <span>loading...</span>
+    </div>
+}

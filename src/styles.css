@@ -4214,3 +4214,10 @@ body {
     -webkit-animation-delay: 400ms;
     animation-delay: 400ms
 }
+.loading-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 200px);
+}

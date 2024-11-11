@@ -1,0 +1,21 @@
+.form-group {
+    margin: 30px;
+    width: min(100%, 600px);
+    padding: 10px;
+}
+.form-group input, .form-group select {
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid black;
+    background-color: transparent;
+    margin-top: 10px;
+}
+.form-group input:active .form-group input:focus {
+    outline: none;
+    border: none;
+}
+.form-group label {
+    font-weight: bolder;
+    font-size: 30px;
+}
